@@ -63,4 +63,4 @@ Kliemt.One should support a controlled innovation loop:
 
 ## First architectural stance
 
-Kliemt.One should begin as a modular platform shell deployed to Azure, with Azure Container Apps as the first hosting target for web modules and APIs. Shared capabilities such as identity, audit logging, document generation, search, and database access should be introduced deliberately as real integrations require them.
+Kliemt.One should begin as a modular platform shell deployed to Azure, with Azure Container Apps as the first hosting target for the landing page, web modules, and APIs. Shared capabilities such as identity, audit logging, document generation, search, and database access should be introduced deliberately as real integrations require them.
