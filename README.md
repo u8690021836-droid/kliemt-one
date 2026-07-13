@@ -30,8 +30,20 @@ A practical first milestone is:
 
 This keeps the project agent-native without letting prototypes bypass governance.
 
+## Running the landing page locally
+
+The current implementation is a dependency-free static landing page. From the repository root, run:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open `http://127.0.0.1:4173/`.
+
 ## Repository map
 
+- `index.html` — first Kliemt.One landing-page shell.
+- `styles.css` — visual design system for the first shell.
 - `AGENTS.md` — standing instructions for coding agents working in this repository.
 - `docs/vision.md` — product vision, target users, and incremental roadmap.
 - `docs/platform/architecture.md` — initial platform architecture and integration principles.
