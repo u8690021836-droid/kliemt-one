@@ -47,6 +47,7 @@ Then open `http://127.0.0.1:4173/`.
 - `AGENTS.md` — standing instructions for coding agents working in this repository.
 - `docs/vision.md` — product vision, target users, and incremental roadmap.
 - `docs/platform/architecture.md` — initial platform architecture and integration principles.
+- `docs/runbooks/azure-first-deployment.md` — first Azure deployment and branch-strategy runbook.
 - `docs/adr/` — architecture decision records.
 
 ## Operating model
