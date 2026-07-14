@@ -25,6 +25,29 @@ Container Apps is the better starting point for Kliemt.One because it lets the p
 
 The current landing page is now container-ready through `Dockerfile` and `nginx.conf`.
 
+## Create the Azure Container Registry first
+
+Before the Container App can run the real Kliemt.One landing page, create a private Azure Container Registry for the image. Recommended portal values:
+
+- Resource group: `Kliemt-one-RG`
+- Registry name: `kliemtoneacr`
+- Location: the same approved EU region as the Container Apps environment
+- SKU: `Basic` for the first development deployment
+- Admin user: disabled for the long-term target; use managed identity or a deployment identity instead
+
+Portal steps:
+
+1. Open a second Azure Portal tab.
+2. Search for **Container Registry**.
+3. Click **Create**.
+4. Select `Kliemt-one-RG`.
+5. Enter `kliemtoneacr` as the registry name. Registry names must be globally unique, lowercase, and contain only letters and numbers. If the name is taken, append a short suffix.
+6. Select the same approved EU region as the Container Apps environment.
+7. Select **Basic** SKU for now.
+8. Review and create the registry.
+
+After the registry exists, build and push this repository's container image to it. The preferred next repository step is to add GitHub Actions or infrastructure-as-code so this happens repeatably instead of through manual clicks.
+
 ## Azure Portal steps for the first landing page
 
 1. Sign in to the Azure Portal.
